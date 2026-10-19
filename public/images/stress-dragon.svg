@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 380" width="100%" height="100%">
+  <defs>
+    <!-- Gloomy Dragon Skin -->
+    <linearGradient id="dragonSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#581c87" />
+      <stop offset="50%" stop-color="#3b0764" />
+      <stop offset="100%" stop-color="#1e1035" />
+    </linearGradient>
+
+    <!-- Belly scales -->
+    <linearGradient id="dragonBelly" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="60%" stop-color="#7e22ce" />
+      <stop offset="100%" stop-color="#581c87" />
+    </linearGradient>
+
+    <!-- Dark smoky aura -->
+    <radialGradient id="smokeAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b0764" stop-opacity="0.6" />
+      <stop offset="65%" stop-color="#1e1035" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#1e1035" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Wing Membrane -->
+    <linearGradient id="wingMembrane" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#31104b" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+
+  <!-- GLOOMY STRESS SMOKE CLOUDS -->
+  <circle cx="210" cy="190" r="170" fill="url(#smokeAura)" />
+  <g opacity="0.65">
+    <ellipse cx="140" cy="310" rx="60" ry="22" fill="#2e1065" />
+    <ellipse cx="270" cy="315" rx="75" ry="24" fill="#2e1065" />
+    <ellipse cx="200" cy="325" rx="80" ry="25" fill="#1e1b4b" />
+  </g>
+
+  <!-- STRESS SYMBOLS AROUND HEAD (# and swirls) -->
+  <g stroke="#f43f5e" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.9">
+    <!-- Stress tic lines on forehead -->
+    <line x1="120" y1="75" x2="120" y2="95" />
+    <line x1="130" y1="75" x2="130" y2="95" />
+    <line x1="113" y1="82" x2="137" y2="82" />
+    <line x1="113" y1="88" x2="137" y2="88" />
+    <!-- Overthinking spiral -->
+    <path d="M70,95 Q85,80 95,95 Q105,110 90,120 Q75,115 80,105 Q85,100 90,105" stroke="#c084fc" stroke-width="2.5" />
+  </g>
+
+  <!-- TAIL (Jagged & spiky) -->
+  <g id="dragon-tail">
+    <path d="M120,240 C60,250 20,290 35,340 C50,330 80,310 110,270 Z" fill="url(#dragonSkin)" />
+    <!-- Spikes along tail -->
+    <polygon points="35,335 15,325 38,315" fill="#f43f5e" />
+    <polygon points="50,310 32,295 58,290" fill="#f43f5e" />
+    <polygon points="75,285 58,268 85,268" fill="#f43f5e" />
+  </g>
+
+  <!-- JAGGED DRAGON WINGS -->
+  <!-- Left Wing -->
+  <g id="left-wing">
+    <!-- Wing bone struts -->
+    <path d="M150,150 Q110,70 60,85 Q40,130 90,175 Q120,185 145,175 Z" fill="url(#wingMembrane)" />
+    <path d="M150,150 L60,85 L85,140 L105,175" stroke="#1e1035" stroke-width="4" fill="none" />
+    <!-- Wing claws -->
+    <polygon points="60,85 50,75 58,92" fill="#f43f5e" />
+  </g>
+
+  <!-- Right Wing (Raised menacingly) -->
+  <g id="right-wing">
+    <path d="M250,145 Q310,50 370,60 Q390,120 330,175 Q285,185 245,170 Z" fill="url(#wingMembrane)" />
+    <path d="M250,145 L370,60 L335,135 L300,175" stroke="#1e1035" stroke-width="4" fill="none" />
+    <!-- Wing claw -->
+    <polygon points="370,60 382,50 372,70" fill="#f43f5e" />
+  </g>
+
+  <!-- MAIN DRAGON BODY -->
+  <g id="dragon-body">
+    <!-- Round, chubby, brooding dragon body -->
+    <ellipse cx="200" cy="225" rx="75" ry="65" fill="url(#dragonSkin)" stroke="#1e1035" stroke-width="3" />
+    <!-- Belly scales -->
+    <path d="M165,190 Q200,200 235,190 Q245,265 200,285 Q155,265 165,190 Z" fill="url(#dragonBelly)" />
+    <!-- Belly horizontal ridges -->
+    <path d="M172,215 Q200,225 228,215" stroke="#4c1d95" stroke-width="2.5" fill="none" />
+    <path d="M170,240 Q200,250 230,240" stroke="#4c1d95" stroke-width="2.5" fill="none" />
+    <path d="M175,265 Q200,272 225,265" stroke="#4c1d95" stroke-width="2.5" fill="none" />
+
+    <!-- Back Spine Plates -->
+    <polygon points="200,155 195,135 205,145" fill="#f43f5e" />
+    <polygon points="215,160 215,140 223,152" fill="#f43f5e" />
+  </g>
+
+  <!-- DRAGON CLAWS / FEET -->
+  <g id="dragon-feet">
+    <!-- Left foot -->
+    <ellipse cx="150" cy="285" rx="22" ry="12" fill="#2e1065" />
+    <polygon points="135,290 128,300 142,293" fill="#cbd5e1" />
+    <polygon points="148,292 148,303 155,293" fill="#cbd5e1" />
+    <polygon points="160,290 166,298 165,288" fill="#cbd5e1" />
+
+    <!-- Right foot -->
+    <ellipse cx="250" cy="285" rx="22" ry="12" fill="#2e1065" />
+    <polygon points="235,290 228,300 242,293" fill="#cbd5e1" />
+    <polygon points="248,292 248,303 255,293" fill="#cbd5e1" />
+    <polygon points="260,290 266,298 265,288" fill="#cbd5e1" />
+  </g>
+
+  <!-- DRAGON HEAD & PESSIMISTIC EXPRESSION -->
+  <g id="dragon-head">
+    <!-- Horns -->
+    <path d="M165,110 C150,60 125,50 110,65 C125,85 145,105 155,120 Z" fill="#f43f5e" />
+    <path d="M235,110 C250,60 275,50 290,65 C275,85 255,105 245,120 Z" fill="#f43f5e" />
+
+    <!-- Head Shape -->
+    <path d="M150,120 C140,85 260,85 250,120 C270,165 240,185 200,185 C160,185 130,165 150,120 Z" fill="url(#dragonSkin)" stroke="#1e1035" stroke-width="3" />
+
+    <!-- Snout / Muzzle -->
+    <ellipse cx="200" cy="155" rx="36" ry="24" fill="#3b0764" />
+    <!-- Nostrils puffing purple stress smoke -->
+    <circle cx="190" cy="152" r="4.5" fill="#1e1035" />
+    <circle cx="210" cy="152" r="4.5" fill="#1e1035" />
+    <!-- Puff smoke -->
+    <circle cx="180" cy="142" r="6" fill="#a855f7" opacity="0.6" />
+    <circle cx="220" cy="142" r="6" fill="#a855f7" opacity="0.6" />
+
+    <!-- Grumpy Pessimistic Mouth (Frowning wavy line) -->
+    <path d="M178,168 Q188,162 200,168 Q212,174 222,168" stroke="#f43f5e" stroke-width="3" stroke-linecap="round" fill="none" />
+    <!-- Little sharp fang protruding downward -->
+    <polygon points="185,166 189,176 193,167" fill="#ffffff" />
+    <polygon points="208,169 212,178 216,169" fill="#ffffff" />
+
+    <!-- EYES: Heavy drooping, grumpy & stressed purple/red anime eyes -->
+    <!-- Left Eye -->
+    <g transform="translate(165, 115)">
+      <ellipse cx="10" cy="12" rx="14" ry="12" fill="#fff1f2" />
+      <!-- Glowing ruby/purple iris -->
+      <circle cx="10" cy="13" r="8" fill="#e11d48" />
+      <circle cx="10" cy="13" r="4" fill="#881337" />
+      <circle cx="8" cy="10" r="2.5" fill="#ffffff" />
+      <!-- Heavy frowning eyelid -->
+      <path d="M-4,8 Q10,18 24,7" fill="#3b0764" />
+      <!-- Stressed eye bags underneath -->
+      <path d="M-2,22 Q10,26 22,22" stroke="#6b21a8" stroke-width="2" fill="none" />
+    </g>
+
+    <!-- Right Eye -->
+    <g transform="translate(210, 115)">
+      <ellipse cx="10" cy="12" rx="14" ry="12" fill="#fff1f2" />
+      <circle cx="10" cy="13" r="8" fill="#e11d48" />
+      <circle cx="10" cy="13" r="4" fill="#881337" />
+      <circle cx="8" cy="10" r="2.5" fill="#ffffff" />
+      <!-- Heavy frowning eyelid -->
+      <path d="M-4,7 Q10,18 24,8" fill="#3b0764" />
+      <!-- Stressed eye bags -->
+      <path d="M-2,22 Q10,26 22,22" stroke="#6b21a8" stroke-width="2" fill="none" />
+    </g>
+  </g>
+</svg>

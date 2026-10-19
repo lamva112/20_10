@@ -1,0 +1,318 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 680" width="100%" height="100%">
+  <defs>
+    <!-- Skin Shading -->
+    <linearGradient id="girlSkinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0ea" />
+      <stop offset="70%" stop-color="#fedacf" />
+      <stop offset="100%" stop-color="#f5beae" />
+    </linearGradient>
+
+    <!-- Hair Gradient -->
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="40%" y2="100%">
+      <stop offset="0%" stop-color="#7a4635" />
+      <stop offset="45%" stop-color="#5a2f22" />
+      <stop offset="85%" stop-color="#421f16" />
+      <stop offset="100%" stop-color="#32140d" />
+    </linearGradient>
+    <linearGradient id="hairHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b87a60" stop-opacity="0" />
+      <stop offset="50%" stop-color="#dfa891" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#b87a60" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Dress Gradient -->
+    <linearGradient id="dressGrad" x1="0%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#fff8ef" />
+      <stop offset="100%" stop-color="#f5e6d3" />
+    </linearGradient>
+    <linearGradient id="dressShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e8cfb8" stop-opacity="0" />
+      <stop offset="100%" stop-color="#d9baa0" stop-opacity="0.65" />
+    </linearGradient>
+
+    <!-- Sash Gradient -->
+    <linearGradient id="sashGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e2748a" />
+      <stop offset="50%" stop-color="#f49bb0" />
+      <stop offset="100%" stop-color="#d25870" />
+    </linearGradient>
+
+    <!-- Bouquet Wrap -->
+    <linearGradient id="wrapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd5e2" />
+      <stop offset="50%" stop-color="#f8a7be" />
+      <stop offset="100%" stop-color="#ea7392" />
+    </linearGradient>
+
+    <!-- Drop Shadow -->
+    <radialGradient id="charShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3d2b28" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#3d2b28" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- GROUND AMBIENT SHADOW -->
+  <ellipse cx="220" cy="650" rx="130" ry="22" fill="url(#charShadow)" />
+
+  <!-- BACK HAIR (Behind neck & shoulders) -->
+  <g id="girl-back-hair">
+    <path d="M165,140 C140,210 120,290 125,370 C128,405 138,435 150,455 C160,420 162,370 168,310 C172,250 180,180 185,150 Z" fill="url(#hairGrad)" />
+    <path d="M255,140 C280,210 300,290 295,370 C292,405 282,435 270,455 C260,420 258,370 252,310 C248,250 240,180 235,150 Z" fill="url(#hairGrad)" />
+    <!-- Flowing locks to the left/breeze -->
+    <path d="M130,280 C105,330 95,380 90,420 C100,410 115,380 130,340 Z" fill="#4a241b" opacity="0.8" />
+  </g>
+
+  <!-- LEGS & SHOES -->
+  <g id="girl-legs">
+    <!-- Back Leg (Left) -->
+    <path d="M190,460 L185,580 Q183,610 182,625 Q180,635 174,640 L195,640 Q196,625 198,590 L205,460 Z" fill="#fad2c4" />
+    <!-- Shoe Left -->
+    <path d="M170,634 C170,626 195,626 198,634 L200,643 C195,646 172,646 170,643 Z" fill="#e2748a" />
+    <rect x="175" y="628" width="16" height="3" fill="#f8a7be" rx="1.5" />
+
+    <!-- Front Leg (Right, gracefully stepping forward) -->
+    <path d="M225,460 L234,575 Q237,605 240,625 Q242,634 250,638 L228,638 Q224,625 221,585 L212,460 Z" fill="#ffe0d4" />
+    <!-- Shoe Right -->
+    <path d="M224,632 C224,624 253,624 255,632 L256,642 C250,645 226,645 224,642 Z" fill="#e2748a" />
+    <rect x="230" y="626" width="18" height="3" fill="#f8a7be" rx="1.5" />
+    <!-- Subtle ankle ribbon -->
+    <circle cx="232" cy="627" r="3" fill="#ffd54f" />
+  </g>
+
+  <!-- CREAM FLORAL DRESS (Flowing skirt & bodice) -->
+  <g id="girl-dress">
+    <!-- Petticoat / under-ruffle -->
+    <path d="M140,460 Q215,480 290,458 Q275,475 215,478 Q155,475 140,460 Z" fill="#f5ede3" />
+    
+    <!-- Skirt Main Body -->
+    <path d="M185,270 L140,460 Q215,474 290,458 L245,270 Z" fill="url(#dressGrad)" stroke="#f2ded0" stroke-width="0.8" />
+    <!-- Skirt folds & depth -->
+    <path d="M185,270 Q168,365 152,462 Q168,468 185,466 Q188,370 195,270 Z" fill="url(#dressShadow)" opacity="0.35" />
+    <path d="M245,270 Q262,365 278,460 Q262,466 245,465 Q242,370 235,270 Z" fill="url(#dressShadow)" opacity="0.3" />
+    <path d="M205,270 Q212,370 216,468 Q226,468 230,465 Q224,370 220,270 Z" fill="url(#dressShadow)" opacity="0.25" />
+
+    <!-- Delicate floral pattern on dress (pastel cherry/rose blossoms) -->
+    <g opacity="0.75">
+      <circle cx="170" cy="360" r="4.5" fill="#f8a7be" />
+      <circle cx="170" cy="360" r="1.5" fill="#ffd54f" />
+      <circle cx="255" cy="340" r="5" fill="#f8a7be" />
+      <circle cx="255" cy="340" r="1.5" fill="#ffd54f" />
+      <circle cx="210" cy="390" r="6" fill="#f48fb1" />
+      <circle cx="210" cy="390" r="2" fill="#ffd54f" />
+      <circle cx="180" cy="430" r="5.5" fill="#f8a7be" />
+      <circle cx="240" cy="425" r="5" fill="#f48fb1" />
+      <!-- Soft green leaves -->
+      <path d="M174,357 Q180,352 178,359 Z" fill="#81c784" />
+      <path d="M250,344 Q244,348 248,342 Z" fill="#81c784" />
+      <path d="M216,392 Q222,396 216,398 Z" fill="#81c784" />
+    </g>
+
+    <!-- Dress Bodice -->
+    <path d="M182,190 L178,272 Q215,280 252,272 L248,190 Q215,200 182,190 Z" fill="url(#dressGrad)" stroke="#f2ded0" stroke-width="0.8" />
+    
+    <!-- Rose Sash & Bow at waist -->
+    <path d="M178,265 Q215,275 252,265 L253,275 Q215,285 177,275 Z" fill="url(#sashGrad)" />
+    <!-- Bow in front/side -->
+    <ellipse cx="235" cy="272" rx="10" ry="6" fill="#f49bb0" transform="rotate(-15 235 272)" />
+    <ellipse cx="248" cy="274" rx="9" ry="5.5" fill="#f49bb0" transform="rotate(20 248 274)" />
+    <circle cx="241" cy="273" r="4" fill="#e2748a" />
+    <!-- Ribbon tails -->
+    <path d="M239,275 Q235,310 228,335 Q235,332 242,280 Z" fill="#e2748a" />
+    <path d="M243,275 Q248,305 252,328 Q247,322 244,278 Z" fill="#d25870" />
+
+    <!-- Dress Neckline & Collar ruffles -->
+    <path d="M192,185 Q215,205 238,185 Q215,195 192,185 Z" fill="#fceddf" />
+    <path d="M190,185 C195,192 205,196 215,196 C225,196 235,192 240,185" stroke="#f49bb0" stroke-width="1.8" fill="none" />
+  </g>
+
+  <!-- NECK & UPPER CHEST -->
+  <path d="M204,155 L204,190 Q215,196 226,190 L226,155 Z" fill="url(#girlSkinGrad)" />
+  <path d="M204,170 Q215,182 226,170" fill="#f7bfaf" opacity="0.5" />
+
+  <!-- HEAD & FACE -->
+  <g id="girl-face">
+    <!-- Face Contour (Soft anime jawline) -->
+    <path d="M182,125 C180,155 192,185 215,195 C238,185 250,155 248,125 C248,95 182,95 182,125 Z" fill="url(#girlSkinGrad)" />
+
+    <!-- Rosy Cheek Blushes -->
+    <ellipse cx="193" cy="155" rx="11" ry="6" fill="#ff8aa3" opacity="0.45" />
+    <ellipse cx="237" cy="155" rx="11" ry="6" fill="#ff8aa3" opacity="0.45" />
+
+    <!-- Cute anime nose -->
+    <path d="M214,147 Q215,152 217,151" stroke="#e09583" stroke-width="1.2" stroke-linecap="round" fill="none" />
+
+    <!-- Warm gentle smile -->
+    <path d="M207,163 Q215,170 223,163" stroke="#d45b73" stroke-width="2" stroke-linecap="round" fill="none" />
+    <path d="M211,165 Q215,168 219,165" stroke="#ff8aa3" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.7" />
+
+    <!-- Left Eye (Charming, gentle anime eye) -->
+    <g transform="translate(187, 133)">
+      <!-- Eyelash upper arc -->
+      <path d="M0,8 Q7,0 17,4" stroke="#3e1a12" stroke-width="2.8" stroke-linecap="round" fill="none" />
+      <path d="M15,4 L18,1" stroke="#3e1a12" stroke-width="1.8" stroke-linecap="round" />
+      <!-- Iris -->
+      <ellipse cx="9" cy="9" rx="6.5" ry="7.5" fill="#5c2e1f" />
+      <ellipse cx="9" cy="10" rx="5" ry="6" fill="#7a3e2b" />
+      <ellipse cx="9" cy="7.5" rx="4" ry="4" fill="#30140b" />
+      <!-- Sparkle highlights -->
+      <circle cx="7" cy="6.5" r="2.5" fill="#ffffff" />
+      <circle cx="12" cy="11.5" r="1.3" fill="#ffffff" />
+      <!-- Lower lash line -->
+      <path d="M4,15 Q9,17 14,15" stroke="#7a3e2b" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.6" />
+      <!-- Eyebrow -->
+      <path d="M-1,-3 Q7,-8 16,-4" stroke="#6b3724" stroke-width="1.6" stroke-linecap="round" fill="none" />
+    </g>
+
+    <!-- Right Eye -->
+    <g transform="translate(222, 133)">
+      <!-- Eyelash upper arc -->
+      <path d="M0,4 Q10,0 17,8" stroke="#3e1a12" stroke-width="2.8" stroke-linecap="round" fill="none" />
+      <path d="M0,4 L-2,1" stroke="#3e1a12" stroke-width="1.8" stroke-linecap="round" />
+      <!-- Iris -->
+      <ellipse cx="8" cy="9" rx="6.5" ry="7.5" fill="#5c2e1f" />
+      <ellipse cx="8" cy="10" rx="5" ry="6" fill="#7a3e2b" />
+      <ellipse cx="8" cy="7.5" rx="4" ry="4" fill="#30140b" />
+      <!-- Sparkle highlights -->
+      <circle cx="6" cy="6.5" r="2.5" fill="#ffffff" />
+      <circle cx="11" cy="11.5" r="1.3" fill="#ffffff" />
+      <!-- Lower lash line -->
+      <path d="M3,15 Q8,17 13,15" stroke="#7a3e2b" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.6" />
+      <!-- Eyebrow -->
+      <path d="M1,-4 Q10,-8 18,-3" stroke="#6b3724" stroke-width="1.6" stroke-linecap="round" fill="none" />
+    </g>
+
+    <!-- Ears -->
+    <path d="M182,135 C176,140 176,155 183,160 Z" fill="#fedacf" />
+    <circle cx="180" cy="153" r="2.5" fill="#f48fb1" />
+    <path d="M248,135 C254,140 254,155 247,160 Z" fill="#fedacf" />
+    <circle cx="250" cy="153" r="2.5" fill="#f48fb1" />
+  </g>
+
+  <!-- FRONT HAIR & BANGS -->
+  <g id="girl-front-hair">
+    <!-- Hair Volume Base -->
+    <path d="M175,130 C165,80 265,80 255,130 C265,110 250,90 215,90 C180,90 165,110 175,130 Z" fill="url(#hairGrad)" />
+
+    <!-- Cute anime bangs framing forehead -->
+    <path d="M178,115 C185,135 192,142 195,135 C198,144 208,146 215,134 C220,146 230,145 235,136 C238,142 245,135 252,118 C240,105 190,105 178,115 Z" fill="url(#hairGrad)" />
+    
+    <!-- Long side locks (framing cheeks) -->
+    <path d="M175,120 C168,170 165,225 175,260 C178,245 178,200 182,150 Z" fill="url(#hairGrad)" />
+    <path d="M255,120 C262,170 265,225 255,260 C252,245 252,200 248,150 Z" fill="url(#hairGrad)" />
+
+    <!-- Flowing ponytail / braid over the shoulder -->
+    <path d="M170,145 C150,210 145,280 152,345 C156,330 158,260 172,190 Z" fill="url(#hairGrad)" />
+
+    <!-- Silky Hair Highlight Halo (Anime Ring of Light) -->
+    <ellipse cx="215" cy="108" rx="45" ry="8" fill="url(#hairHighlight)" />
+
+    <!-- Tiny floral hair accessory -->
+    <circle cx="244" cy="115" r="5" fill="#fff" />
+    <circle cx="244" cy="115" r="2.5" fill="#f48fb1" />
+    <circle cx="251" cy="118" r="3.5" fill="#f8bbd0" />
+  </g>
+
+  <!-- LEFT ARM (Extending naturally holding the pink leash) -->
+  <g id="girl-left-arm">
+    <!-- Sleeve -->
+    <ellipse cx="172" cy="205" rx="14" ry="10" fill="url(#dressGrad)" stroke="#f2ded0" stroke-width="0.8" transform="rotate(-20 172 205)" />
+    <!-- Arm -->
+    <path d="M166,210 L145,280 Q142,310 135,335 Q130,345 125,355 L138,358 Q146,345 152,325 L174,220 Z" fill="url(#girlSkinGrad)" />
+    <!-- Hand gracefully holding leash loop -->
+    <path d="M124,352 C120,358 120,366 126,370 C132,374 138,368 139,360 L136,352 Z" fill="#fedacf" />
+    
+    <!-- Leash Handle held in hand (anchor point: cx=128, cy=365) -->
+    <ellipse cx="128" cy="365" rx="7" ry="12" fill="none" stroke="#e2748a" stroke-width="3" transform="rotate(15 128 365)" />
+    <rect x="125" y="375" width="5" height="6" fill="#fbc02d" rx="1" />
+  </g>
+
+  <!-- RIGHT ARM & LUXURIOUS BOUQUET (Cradling roses & tulips) -->
+  <g id="girl-right-arm-and-bouquet">
+    <!-- Sleeve -->
+    <ellipse cx="258" cy="205" rx="14" ry="10" fill="url(#dressGrad)" stroke="#f2ded0" stroke-width="0.8" transform="rotate(20 258 205)" />
+    
+    <!-- Arm wrapping in front to hold flowers -->
+    <path d="M260,210 L275,260 Q280,285 270,305 L235,305 Q245,280 250,250 L252,210 Z" fill="url(#girlSkinGrad)" />
+    <!-- Hand fingers peeking on bouquet wrap -->
+    <path d="M232,298 Q225,296 220,302 Q225,308 232,305 Z" fill="#fedacf" />
+    <path d="M233,303 Q226,303 222,308 Q227,314 234,310 Z" fill="#fedacf" />
+
+    <!-- THE BOUQUET (clickable interactive focal point) -->
+    <g id="bouquet-subgroup" cursor="pointer" transform="translate(195, 205)">
+      <!-- Filter / Glow effect on hover -->
+      <filter id="bloomGlow">
+        <feGaussianBlur stdDeviation="3" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      </filter>
+
+      <!-- Blush Wrapping Paper (Folded origami style) -->
+      <polygon points="40,95 0,140 75,150 100,105" fill="url(#wrapGrad)" />
+      <polygon points="15,115 -10,135 60,155 50,110" fill="#f48fb1" opacity="0.7" />
+      <polygon points="65,110 95,130 80,152 45,115" fill="#f06292" opacity="0.6" />
+
+      <!-- Lush Eucalyptus & Greenery -->
+      <path d="M10,80 Q-5,65 5,50 Q20,65 15,85 Z" fill="#4caf50" opacity="0.85" />
+      <path d="M80,75 Q98,55 90,40 Q75,60 75,80 Z" fill="#66bb6a" opacity="0.85" />
+      <path d="M35,60 Q30,40 45,35 Q50,55 35,60 Z" fill="#81c784" />
+
+      <!-- Baby's breath (delicate white filler flowers) -->
+      <g fill="#ffffff" opacity="0.9">
+        <circle cx="15" cy="55" r="2.5" />
+        <circle cx="22" cy="48" r="2" />
+        <circle cx="8" cy="62" r="2" />
+        <circle cx="70" cy="50" r="2.5" />
+        <circle cx="78" cy="42" r="2" />
+        <circle cx="85" cy="58" r="2" />
+        <circle cx="48" cy="38" r="2.2" />
+      </g>
+
+      <!-- Pastel Tulips -->
+      <path d="M22,70 C15,55 25,40 32,50 C38,40 48,55 42,70 Z" fill="#f8bbd0" stroke="#f06292" stroke-width="0.8" />
+      <path d="M60,65 C55,50 65,38 72,48 C78,38 88,52 82,65 Z" fill="#ff80ab" stroke="#ec407a" stroke-width="0.8" />
+
+      <!-- Garden Pink Roses (Layered petals) -->
+      <!-- Center Main Rose -->
+      <g transform="translate(45, 68)">
+        <circle cx="0" cy="0" r="16" fill="#e91e63" />
+        <circle cx="0" cy="0" r="13" fill="#f06292" />
+        <circle cx="0" cy="0" r="9" fill="#f48fb1" />
+        <path d="M-6,-4 Q0,-10 6,-4 Q8,2 0,6 Q-8,2 -6,-4 Z" fill="#f8bbd0" />
+        <circle cx="0" cy="0" r="3" fill="#ffffff" opacity="0.85" />
+      </g>
+      <!-- Left Rose -->
+      <g transform="translate(25, 82)">
+        <circle cx="0" cy="0" r="13" fill="#d81b60" />
+        <circle cx="0" cy="0" r="10" fill="#e91e63" />
+        <circle cx="0" cy="0" r="7" fill="#f48fb1" />
+        <circle cx="0" cy="0" r="2.5" fill="#fce4ec" />
+      </g>
+      <!-- Right Rose -->
+      <g transform="translate(68, 80)">
+        <circle cx="0" cy="0" r="14" fill="#ad1457" />
+        <circle cx="0" cy="0" r="11" fill="#d81b60" />
+        <circle cx="0" cy="0" r="7" fill="#f06292" />
+        <circle cx="0" cy="0" r="2.5" fill="#fff" />
+      </g>
+
+      <!-- Satin Ribbon Bow -->
+      <g transform="translate(46, 128)">
+        <ellipse cx="-12" cy="-4" rx="12" ry="7" fill="#d81b60" transform="rotate(-20 -12 -4)" />
+        <ellipse cx="12" cy="-4" rx="12" ry="7" fill="#d81b60" transform="rotate(20 12 -4)" />
+        <circle cx="0" cy="-2" r="5" fill="#ad1457" />
+        <path d="M-3,2 Q-10,25 -14,40 Q-5,32 0,4" fill="#c2185b" />
+        <path d="M3,2 Q10,25 15,42 Q6,33 0,4" fill="#c2185b" />
+      </g>
+
+      <!-- Small Gift Tag "20/10" -->
+      <g transform="translate(18, 120) rotate(-12)">
+        <!-- Tag string -->
+        <line x1="16" y1="0" x2="16" y2="10" stroke="#fbc02d" stroke-width="1.5" />
+        <!-- Tag body -->
+        <rect x="0" y="10" width="34" height="20" rx="3" fill="#fffaf5" stroke="#fbc02d" stroke-width="1.2" />
+        <circle cx="16" cy="13" r="1.5" fill="#b94455" />
+        <text x="17" y="24" font-family="'Times New Roman', Georgia, serif" font-size="9" font-weight="bold" fill="#b94455" text-anchor="middle">20/10</text>
+      </g>
+    </g>
+  </g>
+</svg>

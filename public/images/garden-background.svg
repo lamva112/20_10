@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <!-- Sky sunset gradient -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdc5b4" />
+      <stop offset="35%" stop-color="#f8b6c8" />
+      <stop offset="65%" stop-color="#f9d5bb" />
+      <stop offset="100%" stop-color="#fbeedd" />
+    </linearGradient>
+
+    <!-- Sun glow -->
+    <radialGradient id="sunGlow" cx="68%" cy="32%" r="45%">
+      <stop offset="0%" stop-color="#fff5df" stop-opacity="1" />
+      <stop offset="25%" stop-color="#fed69e" stop-opacity="0.85" />
+      <stop offset="60%" stop-color="#f7a799" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#f7a799" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Cloud gradients -->
+    <linearGradient id="cloudGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#fcd8d8" stop-opacity="0.45" />
+    </linearGradient>
+    <linearGradient id="cloudGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffe9d7" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#e8a8c4" stop-opacity="0.3" />
+    </linearGradient>
+
+    <!-- Distant hills -->
+    <linearGradient id="distantHills" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c497a7" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#8c6a7e" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Midground trees -->
+    <linearGradient id="treeGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#80af87" />
+      <stop offset="50%" stop-color="#558863" />
+      <stop offset="100%" stop-color="#3d664c" />
+    </linearGradient>
+    <linearGradient id="sakuraGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffcfdf" />
+      <stop offset="50%" stop-color="#f79bb7" />
+      <stop offset="100%" stop-color="#d96c8d" />
+    </linearGradient>
+
+    <!-- Lawn & path -->
+    <linearGradient id="lawnGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8eb87f" />
+      <stop offset="40%" stop-color="#699b60" />
+      <stop offset="100%" stop-color="#477343" />
+    </linearGradient>
+    <linearGradient id="pathGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ebdcc8" />
+      <stop offset="50%" stop-color="#dfceb6" />
+      <stop offset="100%" stop-color="#cbb69b" />
+    </linearGradient>
+
+    <!-- Sun rays overlay -->
+    <linearGradient id="rayGrad" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff8db" stop-opacity="0.32" />
+      <stop offset="70%" stop-color="#ffdda8" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ffdda8" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Vignette / atmospheric lighting -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="50%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#4d2433" stop-opacity="0.28" />
+    </radialGradient>
+  </defs>
+
+  <!-- SKY -->
+  <rect width="1200" height="700" fill="url(#skyGrad)" />
+
+  <!-- SUN & GLOW -->
+  <circle cx="820" cy="220" r="280" fill="url(#sunGlow)" />
+  <circle cx="820" cy="220" r="48" fill="#fffbf3" opacity="0.9" filter="drop-shadow(0 0 20px #ffeaaf)" />
+
+  <!-- SOFT ANIME CLOUDS -->
+  <g opacity="0.75">
+    <path d="M120,180 Q180,140 260,160 Q340,130 420,165 Q480,150 540,180 Q510,210 420,215 Q300,225 210,210 Z" fill="url(#cloudGrad1)" />
+    <path d="M680,140 Q760,100 860,120 Q940,95 1020,130 Q1090,115 1160,145 Q1120,175 1020,180 Q900,185 780,170 Z" fill="url(#cloudGrad2)" />
+    <path d="M40,240 Q110,210 190,230 Q270,210 330,245 Q260,270 170,265 Z" fill="url(#cloudGrad1)" opacity="0.6" />
+    <path d="M500,210 Q580,180 660,200 Q720,185 790,215 Q720,240 620,235 Z" fill="url(#cloudGrad2)" opacity="0.5" />
+  </g>
+
+  <!-- DISTANT MOUNTAINS / HILLS -->
+  <path d="M0,380 Q180,310 380,350 Q560,320 740,360 Q960,315 1200,370 L1200,700 L0,700 Z" fill="url(#distantHills)" opacity="0.45" />
+
+  <!-- DISTANT GAZEBO & ROMANTIC ARCH -->
+  <g transform="translate(860, 290) scale(0.65)" opacity="0.7">
+    <path d="M20,70 L20,30 L60,0 L100,30 L100,70 Z" fill="#8c6a7e" opacity="0.5" />
+    <path d="M10,30 L110,30 L60,-5 Z" fill="#c497a7" opacity="0.6" />
+    <circle cx="60" cy="5" r="4" fill="#fed69e" />
+    <!-- Pillars -->
+    <rect x="25" y="30" width="6" height="50" fill="#fff" opacity="0.4" />
+    <rect x="57" y="30" width="6" height="50" fill="#fff" opacity="0.4" />
+    <rect x="89" y="30" width="6" height="50" fill="#fff" opacity="0.4" />
+    <!-- Vines hanging -->
+    <path d="M15,32 Q30,55 35,42 Q45,65 60,38 Q75,62 85,40 Q95,58 105,32" stroke="#6ca16b" stroke-width="3" fill="none" />
+  </g>
+
+  <!-- MIDGROUND SAKURA & FLOWERING TREES -->
+  <!-- Left grove -->
+  <g>
+    <!-- Trunks -->
+    <path d="M110,480 Q125,400 135,340 Q145,395 160,490" fill="#5c4033" />
+    <path d="M60,495 Q75,410 85,360 Q95,415 110,505" fill="#4a3328" />
+    <!-- Sakura blooming canopies -->
+    <circle cx="140" cy="320" r="95" fill="url(#sakuraGrad)" opacity="0.88" />
+    <circle cx="100" cy="335" r="80" fill="url(#sakuraGrad)" opacity="0.85" />
+    <circle cx="185" cy="330" r="75" fill="url(#sakuraGrad)" opacity="0.82" />
+    <circle cx="145" cy="275" r="65" fill="#ffe0ea" opacity="0.9" />
+    <circle cx="95" cy="295" r="55" fill="#ffd1e0" opacity="0.92" />
+  </g>
+
+  <!-- Right grove trees -->
+  <g>
+    <path d="M1050,470 Q1035,390 1020,330 Q1010,385 995,480" fill="#4a3328" />
+    <circle cx="1010" cy="310" r="90" fill="url(#treeGrad1)" opacity="0.85" />
+    <circle cx="1060" cy="325" r="80" fill="url(#treeGrad1)" opacity="0.8" />
+    <circle cx="970" cy="320" r="70" fill="url(#sakuraGrad)" opacity="0.85" />
+    <circle cx="1020" cy="265" r="60" fill="#88c393" opacity="0.9" />
+  </g>
+
+  <!-- MAIN LAWN / GARDEN HILL -->
+  <path d="M0,450 Q300,410 600,430 Q900,415 1200,440 L1200,700 L0,700 Z" fill="url(#lawnGrad)" />
+
+  <!-- WINDING STONE GARDEN PATH -->
+  <path d="M620,430 C580,470 510,500 480,540 C435,595 400,640 370,700 L610,700 C640,650 670,605 690,560 C715,505 680,465 620,430 Z" fill="url(#pathGrad)" />
+  
+  <!-- Flagstone path stones -->
+  <g fill="#d8c4ad" stroke="#c0a98f" stroke-width="1.5" opacity="0.75">
+    <ellipse cx="610" cy="450" rx="30" ry="12" />
+    <ellipse cx="565" cy="475" rx="36" ry="14" />
+    <ellipse cx="635" cy="485" rx="32" ry="13" />
+    <ellipse cx="530" cy="510" rx="44" ry="16" />
+    <ellipse cx="595" cy="525" rx="46" ry="17" />
+    <ellipse cx="490" cy="555" rx="55" ry="19" />
+    <ellipse cx="585" cy="570" rx="52" ry="20" />
+    <ellipse cx="460" cy="610" rx="64" ry="22" />
+    <ellipse cx="570" cy="625" rx="60" ry="23" />
+    <ellipse cx="440" cy="668" rx="72" ry="24" />
+    <ellipse cx="560" cy="682" rx="70" ry="25" />
+  </g>
+
+  <!-- FLOWER BEDS ALONG THE PATH (ROSEBUSHES, TULIPS, DAISIES) -->
+  <!-- Left flower bed -->
+  <g transform="translate(180, 480)">
+    <!-- Bush greenery -->
+    <path d="M20,80 Q50,30 90,55 Q130,20 170,45 Q210,15 250,60 Q270,95 240,110 L10,110 Z" fill="#4d7c49" />
+    <path d="M30,85 Q65,45 105,65 Q145,35 185,55 Q225,30 255,75 L20,110 Z" fill="#6ba266" opacity="0.8" />
+    <!-- Pink roses -->
+    <circle cx="65" cy="60" r="14" fill="#f484a5" />
+    <circle cx="65" cy="60" r="9" fill="#f8a7be" />
+    <circle cx="65" cy="60" r="5" fill="#ffffff" opacity="0.8" />
+    <circle cx="115" cy="45" r="16" fill="#ea5880" />
+    <circle cx="115" cy="45" r="10" fill="#f484a5" />
+    <circle cx="170" cy="50" r="15" fill="#f79bb7" />
+    <circle cx="170" cy="50" r="9" fill="#fce4ec" />
+    <circle cx="225" cy="55" r="14" fill="#e91e63" opacity="0.85" />
+    <!-- Golden buttercups & white daisies -->
+    <circle cx="45" cy="85" r="6" fill="#ffeb3b" />
+    <circle cx="90" cy="80" r="7" fill="#fff" />
+    <circle cx="90" cy="80" r="3" fill="#ffca28" />
+    <circle cx="145" cy="75" r="6" fill="#fff" />
+    <circle cx="145" cy="75" r="3" fill="#ffca28" />
+    <circle cx="200" cy="80" r="7" fill="#ffe082" />
+  </g>
+
+  <!-- Right flower bed -->
+  <g transform="translate(680, 500)">
+    <path d="M20,80 Q70,25 120,50 Q170,15 220,40 Q280,20 330,70 Q340,105 310,120 L10,120 Z" fill="#43703f" />
+    <path d="M40,85 Q85,40 135,60 Q185,30 235,50 Q285,35 320,80 L30,120 Z" fill="#5f955a" opacity="0.8" />
+    <!-- Pastel Tulips and Roses -->
+    <circle cx="75" cy="55" r="15" fill="#f48fb1" />
+    <circle cx="130" cy="45" r="17" fill="#f06292" />
+    <circle cx="190" cy="40" r="16" fill="#ff80ab" />
+    <circle cx="250" cy="50" r="15" fill="#ffb74d" />
+    <circle cx="295" cy="65" r="13" fill="#f48fb1" />
+    <!-- White daisies & lavender sprigs -->
+    <circle cx="50" cy="80" r="7" fill="#ffffff" />
+    <circle cx="50" cy="80" r="3" fill="#ffd54f" />
+    <circle cx="105" cy="75" r="8" fill="#ce93d8" />
+    <circle cx="165" cy="70" r="7" fill="#ffffff" />
+    <circle cx="165" cy="70" r="3" fill="#ffd54f" />
+    <circle cx="225" cy="75" r="8" fill="#ba68c8" />
+  </g>
+
+  <!-- FOREGROUND FLOWER BLUR CORNERS (CINEMATIC DEPTH OF FIELD) -->
+  <!-- Bottom left foreground cherry blossom branch -->
+  <g opacity="0.85" filter="blur(2px)">
+    <path d="M-20,720 Q40,640 110,610 Q180,590 230,620" stroke="#3e2723" stroke-width="12" fill="none" stroke-linecap="round" />
+    <circle cx="130" cy="605" r="28" fill="#ffb3c6" />
+    <circle cx="130" cy="605" r="16" fill="#ff6384" />
+    <circle cx="190" cy="610" r="32" fill="#ffa1b8" />
+    <circle cx="190" cy="610" r="18" fill="#ff4081" />
+    <circle cx="80" cy="635" r="24" fill="#ffd4e0" />
+    <circle cx="235" cy="630" r="20" fill="#ff80ab" />
+  </g>
+
+  <!-- Bottom right foreground soft flowers -->
+  <g opacity="0.8" filter="blur(2.5px)">
+    <circle cx="1120" cy="650" r="38" fill="#ff80ab" />
+    <circle cx="1170" cy="630" r="44" fill="#ff4081" />
+    <circle cx="1070" cy="680" r="32" fill="#ffb3c6" />
+  </g>
+
+  <!-- WARM SUNBEAMS OVERLAY -->
+  <polygon points="780,180 880,180 1200,600 950,700" fill="url(#rayGrad)" />
+  <polygon points="760,200 840,200 480,700 350,700" fill="url(#rayGrad)" opacity="0.5" />
+  <polygon points="800,210 870,210 750,700 620,700" fill="url(#rayGrad)" opacity="0.6" />
+
+  <!-- VIGNETTE -->
+  <rect width="1200" height="700" fill="url(#vignette)" pointer-events="none" />
+</svg>

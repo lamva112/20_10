@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bouquetWrapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe4ec" />
+      <stop offset="40%" stop-color="#f8bbd0" />
+      <stop offset="85%" stop-color="#f06292" />
+      <stop offset="100%" stop-color="#d81b60" />
+    </linearGradient>
+
+    <linearGradient id="roseGradMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff80ab" />
+      <stop offset="45%" stop-color="#e91e63" />
+      <stop offset="100%" stop-color="#ad1457" />
+    </linearGradient>
+
+    <linearGradient id="roseGradSoft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce4ec" />
+      <stop offset="50%" stop-color="#f48fb1" />
+      <stop offset="100%" stop-color="#d81b60" />
+    </linearGradient>
+
+    <linearGradient id="tulipGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff4081" />
+      <stop offset="60%" stop-color="#f8bbd0" />
+      <stop offset="100%" stop-color="#fff0f5" />
+    </linearGradient>
+
+    <radialGradient id="bouquetGlow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#fff5f8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#fff5f8" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- SOFT BACKGROUND GLOW -->
+  <circle cx="160" cy="150" r="140" fill="url(#bouquetGlow)" />
+
+  <!-- WRAPPING PAPER (Back layer) -->
+  <polygon points="160,340 50,180 270,180" fill="url(#bouquetWrapGrad)" />
+  <polygon points="160,350 30,170 160,200" fill="#f48fb1" opacity="0.8" />
+  <polygon points="160,350 290,170 160,200" fill="#ec407a" opacity="0.7" />
+
+  <!-- FOLIAGE & STEMS (Eucalyptus & Rose leaves) -->
+  <g id="bouquet-foliage">
+    <path d="M120,180 Q80,120 70,80 Q105,100 125,160 Z" fill="#43a047" opacity="0.85" />
+    <path d="M200,180 Q240,120 250,80 Q215,100 195,160 Z" fill="#66bb6a" opacity="0.85" />
+    <path d="M160,160 Q170,90 160,50 Q150,90 155,160 Z" fill="#81c784" />
+    <!-- Rounded eucalyptus leaves -->
+    <ellipse cx="90" cy="115" rx="18" ry="12" fill="#7cb342" transform="rotate(-30 90 115)" />
+    <ellipse cx="230" cy="115" rx="18" ry="12" fill="#8bc34a" transform="rotate(30 230 115)" />
+    <ellipse cx="160" cy="75" rx="16" ry="10" fill="#9ccc65" />
+  </g>
+
+  <!-- BABY'S BREATH (Gypsophila sprigs) -->
+  <g id="babys-breath" fill="#ffffff" opacity="0.95">
+    <circle cx="85" cy="130" r="4" />
+    <circle cx="95" cy="120" r="3.5" />
+    <circle cx="105" cy="135" r="3" />
+    <circle cx="235" cy="130" r="4" />
+    <circle cx="225" cy="120" r="3.5" />
+    <circle cx="215" cy="135" r="3" />
+    <circle cx="130" cy="85" r="3.8" />
+    <circle cx="185" cy="85" r="3.8" />
+    <circle cx="160" cy="65" r="3.5" />
+    <circle cx="145" cy="60" r="3" />
+    <circle cx="175" cy="60" r="3" />
+  </g>
+
+  <!-- BLOOMING FLOWERS (Roses & Tulips) -->
+  <!-- Left Tulip -->
+  <g transform="translate(100, 110)">
+    <path d="M-15,30 C-30,5 -10,-20 0,-5 C10,-20 30,5 15,30 Z" fill="url(#tulipGrad)" stroke="#f06292" stroke-width="1" />
+  </g>
+  <!-- Right Tulip -->
+  <g transform="translate(220, 110)">
+    <path d="M-15,30 C-30,5 -10,-20 0,-5 C10,-20 30,5 15,30 Z" fill="url(#tulipGrad)" stroke="#f06292" stroke-width="1" />
+  </g>
+
+  <!-- Soft Pink Garden Rose (Top center) -->
+  <g transform="translate(160, 105)">
+    <circle cx="0" cy="0" r="26" fill="url(#roseGradSoft)" />
+    <circle cx="0" cy="0" r="19" fill="#f06292" />
+    <circle cx="0" cy="0" r="12" fill="#ec407a" />
+    <path d="M-8,-6 Q0,-14 8,-6 Q10,3 0,8 Q-10,3 -8,-6 Z" fill="#ffe4ec" />
+  </g>
+
+  <!-- Deep Velvet Rose (Bottom left) -->
+  <g transform="translate(125, 150)">
+    <circle cx="0" cy="0" r="28" fill="url(#roseGradMain)" />
+    <circle cx="0" cy="0" r="20" fill="#d81b60" />
+    <circle cx="0" cy="0" r="13" fill="#e91e63" />
+    <path d="M-9,-7 Q0,-15 9,-7 Q11,3 0,9 Q-11,3 -9,-7 Z" fill="#ff80ab" />
+    <circle cx="0" cy="0" r="5" fill="#fce4ec" opacity="0.9" />
+  </g>
+
+  <!-- Main Focal Rose (Center) -->
+  <g transform="translate(170, 145)">
+    <circle cx="0" cy="0" r="34" fill="url(#roseGradMain)" />
+    <circle cx="0" cy="0" r="25" fill="#e91e63" />
+    <circle cx="0" cy="0" r="16" fill="#f06292" />
+    <path d="M-12,-9 Q0,-20 12,-9 Q14,4 0,12 Q-14,4 -12,-9 Z" fill="#f8bbd0" />
+    <circle cx="0" cy="0" r="6" fill="#ffffff" opacity="0.9" />
+  </g>
+
+  <!-- Soft Rose (Bottom right) -->
+  <g transform="translate(205, 160)">
+    <circle cx="0" cy="0" r="24" fill="url(#roseGradSoft)" />
+    <circle cx="0" cy="0" r="16" fill="#f06292" />
+    <circle cx="0" cy="0" r="9" fill="#f8bbd0" />
+    <circle cx="0" cy="0" r="3.5" fill="#fff" />
+  </g>
+
+  <!-- FOREGROUND WRAPPING PAPER -->
+  <polygon points="160,350 90,210 230,210" fill="url(#bouquetWrapGrad)" />
+  <polygon points="160,350 70,225 150,220" fill="#f8bbd0" opacity="0.8" />
+  <polygon points="160,350 250,225 170,220" fill="#f06292" opacity="0.85" />
+
+  <!-- SATIN SILK RIBBON BOW -->
+  <g transform="translate(160, 240)">
+    <!-- Left Loop -->
+    <ellipse cx="-28" cy="-8" rx="28" ry="16" fill="#c2185b" transform="rotate(-25 -28 -8)" />
+    <ellipse cx="-26" cy="-8" rx="18" ry="9" fill="#e91e63" transform="rotate(-25 -26 -8)" />
+    <!-- Right Loop -->
+    <ellipse cx="28" cy="-8" rx="28" ry="16" fill="#c2185b" transform="rotate(25 28 -8)" />
+    <ellipse cx="26" cy="-8" rx="18" ry="9" fill="#e91e63" transform="rotate(25 26 -8)" />
+    <!-- Center Knot -->
+    <circle cx="0" cy="-6" r="11" fill="#ad1457" />
+    <circle cx="0" cy="-6" r="7" fill="#e91e63" />
+    <!-- Trailing ribbons -->
+    <path d="M-6,2 Q-20,50 -28,85 Q-12,70 0,6" fill="#ad1457" />
+    <path d="M6,2 Q22,50 32,90 Q14,75 0,6" fill="#c2185b" />
+  </g>
+
+  <!-- 20/10 COMMEMORATIVE KEEPSAKE GIFT TAG -->
+  <g transform="translate(100, 230) rotate(-14)">
+    <line x1="25" y1="0" x2="25" y2="18" stroke="#fbc02d" stroke-width="2.5" />
+    <rect x="0" y="18" width="55" height="34" rx="5" fill="#fffaf5" stroke="#fbc02d" stroke-width="2" />
+    <circle cx="27.5" cy="23" r="2.5" fill="#b94455" />
+    <text x="27.5" y="42" font-family="'Times New Roman', Georgia, serif" font-size="16" font-weight="bold" fill="#b94455" text-anchor="middle">20/10</text>
+  </g>
+</svg>

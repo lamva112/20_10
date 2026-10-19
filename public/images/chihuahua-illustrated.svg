@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 240" width="100%" height="100%">
+  <defs>
+    <!-- Fur gradients -->
+    <linearGradient id="creamFur" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff9f2" />
+      <stop offset="60%" stop-color="#f6ede1" />
+      <stop offset="100%" stop-color="#e8dac8" />
+    </linearGradient>
+
+    <linearGradient id="tanFur" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ddb288" />
+      <stop offset="50%" stop-color="#c99566" />
+      <stop offset="100%" stop-color="#a67245" />
+    </linearGradient>
+
+    <!-- Ear inner gradient -->
+    <linearGradient id="earInner" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#f8bbd0" />
+      <stop offset="70%" stop-color="#f48fb1" />
+      <stop offset="100%" stop-color="#ff80ab" />
+    </linearGradient>
+
+    <!-- Harness gradient -->
+    <linearGradient id="harnessGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec407a" />
+      <stop offset="50%" stop-color="#f48fb1" />
+      <stop offset="100%" stop-color="#d81b60" />
+    </linearGradient>
+
+    <!-- Shadow -->
+    <radialGradient id="dogShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3d2b28" stop-opacity="0.38" />
+      <stop offset="100%" stop-color="#3d2b28" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- GROUND SHADOW -->
+  <ellipse cx="140" cy="222" rx="95" ry="14" fill="url(#dogShadow)" />
+
+  <!-- TAIL (Perky curled Chihuahua tail) -->
+  <g id="dog-tail">
+    <path d="M65,145 C45,130 35,95 55,75 C70,60 85,75 80,95 C75,110 65,135 65,145 Z" fill="url(#tanFur)" />
+    <!-- Fluffy cream tail tip -->
+    <path d="M55,75 C60,68 75,65 80,82 C75,85 65,82 55,75 Z" fill="#fffaf5" />
+  </g>
+
+  <!-- BACK LEGS -->
+  <!-- Left back leg -->
+  <g id="leg-back-left">
+    <path d="M85,145 C80,165 72,190 70,212 C70,217 76,219 82,217 C85,205 92,185 100,160 Z" fill="#c99566" />
+    <!-- Paw -->
+    <ellipse cx="76" cy="216" rx="7" ry="4" fill="#fdf7f0" />
+  </g>
+  <!-- Right back leg (Stepping) -->
+  <g id="leg-back-right">
+    <path d="M105,145 C108,165 115,190 120,212 C122,217 128,217 130,212 C125,190 118,170 115,150 Z" fill="url(#tanFur)" />
+    <!-- Paw -->
+    <ellipse cx="125" cy="215" rx="7" ry="4" fill="#fdf7f0" />
+  </g>
+
+  <!-- BODY (Compact, delicate Chihuahua torso) -->
+  <g id="dog-body">
+    <!-- Back tan patch -->
+    <path d="M75,140 C75,115 110,110 160,118 C185,122 195,145 190,165 C175,182 110,188 80,170 Z" fill="url(#tanFur)" />
+    <!-- Cream underbelly & chest fluff -->
+    <path d="M100,150 C125,150 165,145 185,155 C185,175 145,188 110,182 C95,178 95,160 100,150 Z" fill="url(#creamFur)" />
+    <!-- Prominent proud chest fluff -->
+    <path d="M165,125 C190,135 200,155 190,175 C180,165 170,140 165,125 Z" fill="#fffdfa" />
+  </g>
+
+  <!-- FRONT LEGS -->
+  <!-- Left front leg -->
+  <g id="leg-front-left">
+    <path d="M162,155 C160,175 158,198 156,216 C156,220 163,221 168,219 C170,205 174,185 176,165 Z" fill="#c99566" />
+    <ellipse cx="162" cy="218" rx="6.5" ry="4" fill="#fdf7f0" />
+  </g>
+  <!-- Right front leg (Trotting happily forward) -->
+  <g id="leg-front-right">
+    <path d="M180,155 C184,175 192,195 200,214 C202,218 208,218 210,214 C204,195 194,175 188,155 Z" fill="url(#tanFur)" />
+    <ellipse cx="206" cy="216" rx="6.5" ry="4" fill="#fdf7f0" />
+  </g>
+
+  <!-- PINK LEATHER HARNESS (Visible & elegant, with leash attachment D-Ring) -->
+  <g id="dog-harness">
+    <!-- Body strap -->
+    <path d="M130,120 L138,180 L149,178 L141,120 Z" fill="url(#harnessGrad)" stroke="#c2185b" stroke-width="0.7" />
+    <!-- Shoulder chest strap -->
+    <path d="M136,125 Q165,135 185,155 L180,163 Q160,145 132,132 Z" fill="url(#harnessGrad)" stroke="#c2185b" stroke-width="0.7" />
+    <!-- Cute gold stud details -->
+    <circle cx="136" cy="126" r="3" fill="#fbc02d" stroke="#f57f17" stroke-width="0.6" />
+    <circle cx="139" cy="155" r="2.2" fill="#fbc02d" />
+    <circle cx="170" cy="148" r="2.2" fill="#fbc02d" />
+
+    <!-- Leash Attachment Ring on top of harness (Anchor point: cx=136, cy=118) -->
+    <ellipse cx="136" cy="118" rx="5.5" ry="4" fill="none" stroke="#fbc02d" stroke-width="2" />
+    <rect x="134" y="119" width="4" height="4" fill="#e91e63" rx="1" />
+  </g>
+
+  <!-- CHIHUAHUA HEAD & EARS -->
+  <g id="dog-head" transform="translate(160, 45)">
+    <!-- BACK OF LARGE CHIHUAHUA EARS -->
+    <!-- Left Ear (Farther) -->
+    <path d="M-10,35 C-35,-5 -25,-28 -5,-25 C12,-22 18,10 15,35 Z" fill="url(#tanFur)" />
+    <path d="M-6,30 C-24,-2 -15,-20 0,-18 C10,-15 12,8 10,30 Z" fill="url(#earInner)" />
+
+    <!-- Right Ear (Front, iconic large pointed Chihuahua ear) -->
+    <path d="M22,35 C28,-8 42,-35 62,-30 C78,-25 68,12 50,42 Z" fill="url(#tanFur)" />
+    <!-- Pink Inner Ear -->
+    <path d="M28,32 C34,-2 46,-24 58,-22 C70,-18 60,10 46,36 Z" fill="url(#earInner)" />
+    <!-- Subtle ear tufts -->
+    <path d="M26,30 Q35,22 32,15 Q36,25 38,32" stroke="#fff8f0" stroke-width="1.5" fill="none" />
+
+    <!-- APPLE DOME HEAD -->
+    <ellipse cx="18" cy="40" rx="32" ry="28" fill="url(#tanFur)" />
+    <ellipse cx="16" cy="48" rx="26" ry="22" fill="url(#creamFur)" />
+
+    <!-- White blaze mark between eyes -->
+    <path d="M15,18 C12,30 8,42 16,50 C24,42 20,30 17,18 Z" fill="#ffffff" />
+
+    <!-- EYES (Large, dewy, dark expressive anime puppy eyes) -->
+    <!-- Left Eye -->
+    <g transform="translate(-1, 36)">
+      <ellipse cx="0" cy="0" rx="8" ry="9" fill="#241209" />
+      <ellipse cx="0" cy="1" rx="6.5" ry="7.5" fill="#421f11" />
+      <!-- Starry anime highlights -->
+      <circle cx="-2.5" cy="-2.5" r="3.2" fill="#ffffff" />
+      <circle cx="3" cy="3.5" r="1.5" fill="#ffffff" />
+      <circle cx="-1" cy="4.5" r="1" fill="#ffffff" opacity="0.8" />
+      <!-- Cute anime lower lid highlight -->
+      <path d="M-5,7 Q0,9 5,7" stroke="#8d5b43" stroke-width="0.8" fill="none" />
+    </g>
+
+    <!-- Right Eye -->
+    <g transform="translate(32, 38)">
+      <ellipse cx="0" cy="0" rx="8" ry="9" fill="#241209" />
+      <ellipse cx="0" cy="1" rx="6.5" ry="7.5" fill="#421f11" />
+      <!-- Highlights -->
+      <circle cx="-2.5" cy="-2.5" r="3.2" fill="#ffffff" />
+      <circle cx="3" cy="3.5" r="1.5" fill="#ffffff" />
+      <circle cx="-1" cy="4.5" r="1" fill="#ffffff" opacity="0.8" />
+      <path d="M-5,7 Q0,9 5,7" stroke="#8d5b43" stroke-width="0.8" fill="none" />
+    </g>
+
+    <!-- PETITE MUZZLE & NOSE -->
+    <ellipse cx="16" cy="55" rx="14" ry="10" fill="#ffffff" />
+    <!-- Little dark button nose -->
+    <path d="M12,49 Q16,47 20,49 Q20,53 16,55 Q12,53 12,49 Z" fill="#2c140d" />
+    <circle cx="14" cy="49.5" r="1" fill="#ffffff" opacity="0.8" />
+    <!-- Sweet little mouth / pant -->
+    <path d="M12,56 Q16,58 20,56" stroke="#4a271b" stroke-width="1.2" stroke-linecap="round" fill="none" />
+    <!-- Pink tongue peeking out -->
+    <path d="M14,57 Q16,63 18,57 Z" fill="#ff80ab" />
+
+    <!-- Rosy puppy cheek blush -->
+    <ellipse cx="-4" cy="48" rx="7" ry="4" fill="#ff80ab" opacity="0.4" />
+    <ellipse cx="34" cy="50" rx="7" ry="4" fill="#ff80ab" opacity="0.4" />
+  </g>
+</svg>
